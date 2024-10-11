@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Parlor - Order Now</title>
+    <link rel="icon" href="./img/blog-popular-pizza-slice_600x600.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Top Banner Section -->
+    <header>
+        <h1>Welcome to Pizza Parlor</h1>
+        <p>Place your order for delicious pizza!</p>
+        <!-- Logo Image -->
+        <img src="./img/blog-popular-pizza-margherita_600x600.webp" alt="Pizza Parlor Logo" class="banner-image">
+    </header>
+
+    <!-- Pizza Order Form Section -->
+    <section id="pizza-order">
+        <h2>Customize Your Pizza</h2>
+        
+        <!-- Display Pizza Image -->
+        <img src="images/sample_pizza.jpg" alt="Sample Pizza" class="pizza-image">
+
+        <form method="POST" action="#">
+            <label for="customer-name">Your Name:</label>
+            <input type="text" id="customer-name" name="customer-name" required><br>
+
+            <label for="contact-email">Email Address:</label>
+            <input type="email" id="contact-email" name="contact-email" required><br>
+
+            <label for="contact-phone">Phone:</label>
+            <input type="tel" id="contact-phone" name="contact-phone" required><br>
+
+            <label for="pizza-quantity">Number of Pizzas:</label>
+            <input type="number" id="pizza-quantity" name="pizza-quantity" min="1" required><br>
+
+            <label>Choose Pizza Size:</label><br>
+            <input type="radio" id="small-size" name="pizza-size" value="Small" required>
+            <label for="small-size">Small</label><br>
+            <input type="radio" id="medium-size" name="pizza-size" value="Medium">
+            <label for="medium-size">Medium</label><br>
+            <input type="radio" id="large-size" name="pizza-size" value="Large">
+            <label for="large-size">Large</label><br>
+
+            <label>Select Toppings:</label><br>
+            <input type="checkbox" id="extra-cheese" name="topping-options" value="Cheese">
+            <label for="extra-cheese">Extra Cheese</label><br>
+            <input type="checkbox" id="veg-mushrooms" name="topping-options" value="Mushrooms">
+            <label for="veg-mushrooms">Mushrooms</label><br>
+            <input type="checkbox" id="fresh-onions" name="topping-options" value="Onions">
+            <label for="fresh-onions">Onions</label><br>
+
+            <label for="custom-requests">Additional Instructions:</label><br>
+            <textarea id="custom-requests" name="custom-requests" rows="5" cols="50"></textarea><br>
+
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <!-- Order Confirmation Section -->
+    <section id="order-confirmation" style="display:none;">
+        <h2>Order Details</h2>
+        <div id="confirmation-details">
+            <p>Your order has been successfully placed!</p>
+            <p>Name: <span id="confirm-customer-name"></span></p>
+            <p>Email: <span id="confirm-customer-email"></span></p>
+            <p>Phone: <span id="confirm-customer-phone"></span></p>
+            <p>Pizza Quantity: <span id="confirm-pizza-quantity"></span></p>
+            <p>Pizza Size: <span id="confirm-pizza-size"></span></p>
+            <p>Toppings: <span id="confirm-pizza-toppings"></span></p>
+            <p>Special Instructions: <span id="confirm-special-requests"></span></p>
+        </div>
+    </section>
+</body>
+</html>
