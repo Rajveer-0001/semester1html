@@ -1,0 +1,153 @@
+/* General styling for the movie poster */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010; /* Dark background for cinematic contrast */
+    font-family: 'Arial', sans-serif; /* Clean and minimal font */
+    color: #ffffff; /* White text for readability */
+}
+
+/* Hero section with background image */
+#hero {
+    background-image: url(../images/newimg3.jpeg); /*image path */
+    height: 100vh;
+    width: 80%; /* Full width for consistency */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text horizontally */
+    margin: 0 auto; /*it's centered on the page */
+}
+
+/* Movie title and subtitle */
+.details {
+    margin: 0; /* Remove default margin for better vision */
+    text-align: center;
+}
+
+.details h1 {
+    font-size: 2.5rem; /* Elegant title font */
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f9d342; /* Soft gold for cinematic color */
+}
+
+.details h1 a {
+    text-decoration: none;
+    color: #f9d342;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8); /* Subtle shadow for depth */
+}
+
+.details h1 span {
+    font-size: 1rem; /* Small and subtle subtitle */
+    color: #ff4500; /* Fiery red */
+    display: block;
+    margin-top: 5px;
+}
+
+/* Cast/Stars section */
+.stars {
+    margin-top: 20px;
+    text-align: center;
+    color: #f0e68c; /* Pale gold text */
+}
+
+#first {
+    list-style: none;
+    padding: 0;
+}
+
+.one {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1rem; /* Balanced font size */
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+span {
+    display: block;
+    font-size: 0.9rem; /* Slightly small for last name */
+    color: #ffffff; /* White for secondary emphasis */
+}
+
+/* Introduction/description */
+.intro {
+    margin-top: 30px;
+    text-align: center;
+    max-width: 600px;
+    color: #d3d3d3; /* Soft gray for description text/
+    font-size: 1rem; /* Compact and readable */
+    line-height: 1.5;
+}
+
+/* Release date section */
+.date {
+    margin-top: 30px;
+    text-align: center;
+    color: #f5deb3; /* Soft wheat color */
+}
+
+.date .sm {
+    font-size: 0.9rem; /* Smaller, refined size */
+    display: inline-block;
+    margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#l-date {
+    font-size: 1rem; /* Slightly larger  */
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Additional info section */
+.sec {
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.sec .large {
+    font-size: 0.9rem; /* Balanced font size */
+    background: rgba(255, 215, 0, 0.8); /* Gold highlight for hashtags */
+    color: #000000;
+    padding: 3px 7px;
+    border-radius: 3px;
+}
+
+/* Footer */
+.lower {
+    margin-top: 40px;
+    text-align: center;
+    color: #c0c0c0; /* Subtle gray */
+}
+
+.lower p {
+    font-size: 0.8rem; /* Small font for footer */
+    text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .details h1 {
+        font-size: 2rem;
+    }
+
+    .one {
+        font-size: 0.9rem;
+    }
+
+    .intro {
+        font-size: 0.9rem;
+    }
+
+    .sec .large {
+        font-size: 0.8rem;
+    }
+}
